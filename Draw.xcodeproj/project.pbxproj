@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F2893081EA0600100F55556 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2893071EA0600100F55556 /* main.m */; };
-		3F28930B1EA0600100F55556 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F28930A1EA0600100F55556 /* AppDelegate.m */; };
-		3F28930E1EA0600100F55556 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F28930D1EA0600100F55556 /* ViewController.m */; };
 		3F2893131EA0600100F55556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2893121EA0600100F55556 /* Assets.xcassets */; };
 		3F2893161EA0600100F55556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2893141EA0600100F55556 /* LaunchScreen.storyboard */; };
 		3F91BAC51EA73502005F263F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F91BAAB1EA73502005F263F /* Info.plist */; };
@@ -23,18 +21,16 @@
 		3F91BACD1EA73502005F263F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BABF1EA73502005F263F /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		3F91BACE1EA73502005F263F /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAC11EA73502005F263F /* View+MASAdditions.m */; };
 		3F91BACF1EA73502005F263F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAC41EA73502005F263F /* ViewController+MASAdditions.m */; };
-		3F91BAD51EA735A3005F263F /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAD41EA735A3005F263F /* DemoController.m */; };
-		3F91BAD81EA73AC9005F263F /* zhuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAD71EA73AC8005F263F /* zhuView.m */; };
-		3F91F3C91EA613C4000B6BC5 /* huView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91F3C81EA613C4000B6BC5 /* huView.m */; };
+		3F91BADE1EA747C6005F263F /* huView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BADB1EA747C6005F263F /* huView.m */; };
+		3F91BADF1EA747C6005F263F /* zhuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BADD1EA747C6005F263F /* zhuView.m */; };
+		3F91BAE31EA747F1005F263F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAE21EA747F1005F263F /* AppDelegate.m */; };
+		3F91BAE91EA74812005F263F /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAE61EA74812005F263F /* DemoController.m */; };
+		3F91BAEA1EA74812005F263F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAE81EA74812005F263F /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F2893031EA0600100F55556 /* Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2893071EA0600100F55556 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3F2893091EA0600100F55556 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3F28930A1EA0600100F55556 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3F28930C1EA0600100F55556 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3F28930D1EA0600100F55556 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3F2893121EA0600100F55556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F2893151EA0600100F55556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F2893171EA0600100F55556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,12 +60,16 @@
 		3F91BAC21EA73502005F263F /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		3F91BAC31EA73502005F263F /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		3F91BAC41EA73502005F263F /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		3F91BAD31EA735A3005F263F /* DemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoController.h; sourceTree = "<group>"; };
-		3F91BAD41EA735A3005F263F /* DemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoController.m; sourceTree = "<group>"; };
-		3F91BAD61EA73AC8005F263F /* zhuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhuView.h; sourceTree = "<group>"; };
-		3F91BAD71EA73AC8005F263F /* zhuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhuView.m; sourceTree = "<group>"; };
-		3F91F3C71EA613C4000B6BC5 /* huView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huView.h; sourceTree = "<group>"; };
-		3F91F3C81EA613C4000B6BC5 /* huView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = huView.m; sourceTree = "<group>"; };
+		3F91BADA1EA747C6005F263F /* huView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huView.h; sourceTree = "<group>"; };
+		3F91BADB1EA747C6005F263F /* huView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = huView.m; sourceTree = "<group>"; };
+		3F91BADC1EA747C6005F263F /* zhuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhuView.h; sourceTree = "<group>"; };
+		3F91BADD1EA747C6005F263F /* zhuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhuView.m; sourceTree = "<group>"; };
+		3F91BAE11EA747F1005F263F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F91BAE21EA747F1005F263F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F91BAE51EA74812005F263F /* DemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoController.h; sourceTree = "<group>"; };
+		3F91BAE61EA74812005F263F /* DemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoController.m; sourceTree = "<group>"; };
+		3F91BAE71EA74812005F263F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F91BAE81EA74812005F263F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,19 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				3F91BAAA1EA73502005F263F /* Masonry */,
-				3F2893091EA0600100F55556 /* AppDelegate.h */,
-				3F28930A1EA0600100F55556 /* AppDelegate.m */,
-				3F28930C1EA0600100F55556 /* ViewController.h */,
-				3F28930D1EA0600100F55556 /* ViewController.m */,
-				3F91BAD31EA735A3005F263F /* DemoController.h */,
-				3F91BAD41EA735A3005F263F /* DemoController.m */,
-				3F91F3C71EA613C4000B6BC5 /* huView.h */,
-				3F91F3C81EA613C4000B6BC5 /* huView.m */,
-				3F91BAD61EA73AC8005F263F /* zhuView.h */,
-				3F91BAD71EA73AC8005F263F /* zhuView.m */,
-				3F2893121EA0600100F55556 /* Assets.xcassets */,
-				3F2893141EA0600100F55556 /* LaunchScreen.storyboard */,
-				3F2893171EA0600100F55556 /* Info.plist */,
+				3F91BAE01EA747F1005F263F /* Delegate */,
+				3F91BAE41EA74812005F263F /* Controller */,
+				3F91BAD91EA747C6005F263F /* View */,
 				3F2893061EA0600100F55556 /* Supporting Files */,
 			);
 			path = Draw;
@@ -124,6 +114,9 @@
 		3F2893061EA0600100F55556 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F2893121EA0600100F55556 /* Assets.xcassets */,
+				3F2893141EA0600100F55556 /* LaunchScreen.storyboard */,
+				3F2893171EA0600100F55556 /* Info.plist */,
 				3F2893071EA0600100F55556 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -160,6 +153,37 @@
 				3F91BAC41EA73502005F263F /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		3F91BAD91EA747C6005F263F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F91BADA1EA747C6005F263F /* huView.h */,
+				3F91BADB1EA747C6005F263F /* huView.m */,
+				3F91BADC1EA747C6005F263F /* zhuView.h */,
+				3F91BADD1EA747C6005F263F /* zhuView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F91BAE01EA747F1005F263F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3F91BAE11EA747F1005F263F /* AppDelegate.h */,
+				3F91BAE21EA747F1005F263F /* AppDelegate.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		3F91BAE41EA74812005F263F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F91BAE51EA74812005F263F /* DemoController.h */,
+				3F91BAE61EA74812005F263F /* DemoController.m */,
+				3F91BAE71EA74812005F263F /* ViewController.h */,
+				3F91BAE81EA74812005F263F /* ViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,20 +259,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F91BAC81EA73502005F263F /* MASConstraintMaker.m in Sources */,
-				3F28930E1EA0600100F55556 /* ViewController.m in Sources */,
-				3F28930B1EA0600100F55556 /* AppDelegate.m in Sources */,
 				3F91BAC71EA73502005F263F /* MASConstraint.m in Sources */,
 				3F91BACF1EA73502005F263F /* ViewController+MASAdditions.m in Sources */,
+				3F91BADE1EA747C6005F263F /* huView.m in Sources */,
+				3F91BAE91EA74812005F263F /* DemoController.m in Sources */,
 				3F91BAC91EA73502005F263F /* MASLayoutConstraint.m in Sources */,
-				3F91BAD81EA73AC9005F263F /* zhuView.m in Sources */,
-				3F91BAD51EA735A3005F263F /* DemoController.m in Sources */,
+				3F91BAEA1EA74812005F263F /* ViewController.m in Sources */,
 				3F91BACC1EA73502005F263F /* NSArray+MASAdditions.m in Sources */,
 				3F91BACB1EA73502005F263F /* MASViewConstraint.m in Sources */,
 				3F91BACA1EA73502005F263F /* MASViewAttribute.m in Sources */,
 				3F91BACE1EA73502005F263F /* View+MASAdditions.m in Sources */,
 				3F2893081EA0600100F55556 /* main.m in Sources */,
-				3F91F3C91EA613C4000B6BC5 /* huView.m in Sources */,
 				3F91BAC61EA73502005F263F /* MASCompositeConstraint.m in Sources */,
+				3F91BAE31EA747F1005F263F /* AppDelegate.m in Sources */,
+				3F91BADF1EA747C6005F263F /* zhuView.m in Sources */,
 				3F91BACD1EA73502005F263F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
