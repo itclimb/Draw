@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "DemoController.h"
+#import "huView.h"
 
 @interface ViewController ()
+
+@property(nonatomic, strong) NSArray *datas;
 
 @end
 
@@ -16,14 +20,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    _datas = @[
+               @{
+                   @"text":@"弧形"
+                   },
+               @{
+                   @"text":@"柱状形"
+                   }
+               ];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return _datas.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+    }
+    cell.textLabel.text = _datas[indexPath.row][@"text"];
+    return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    DemoController *vc = [[DemoController alloc] init];
+    vc.type = (int)indexPath.row;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end
