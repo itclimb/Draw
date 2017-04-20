@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2844E21EA8606500785F44 /* hu1View.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2844E11EA8606500785F44 /* hu1View.m */; };
 		3F2893081EA0600100F55556 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2893071EA0600100F55556 /* main.m */; };
 		3F2893131EA0600100F55556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2893121EA0600100F55556 /* Assets.xcassets */; };
 		3F2893161EA0600100F55556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2893141EA0600100F55556 /* LaunchScreen.storyboard */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		3F2844DF1EA8488700785F44 /* JJSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJSingleton.h; sourceTree = "<group>"; };
+		3F2844E01EA8606500785F44 /* hu1View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hu1View.h; sourceTree = "<group>"; };
+		3F2844E11EA8606500785F44 /* hu1View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hu1View.m; sourceTree = "<group>"; };
 		3F2893031EA0600100F55556 /* Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2893071EA0600100F55556 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F2893121EA0600100F55556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 			children = (
 				3F91BADA1EA747C6005F263F /* huView.h */,
 				3F91BADB1EA747C6005F263F /* huView.m */,
+				3F2844E01EA8606500785F44 /* hu1View.h */,
+				3F2844E11EA8606500785F44 /* hu1View.m */,
 				3F91BADC1EA747C6005F263F /* zhuView.h */,
 				3F91BADD1EA747C6005F263F /* zhuView.m */,
 			);
@@ -263,6 +268,7 @@
 				3F91BAC81EA73502005F263F /* MASConstraintMaker.m in Sources */,
 				3F91BAC71EA73502005F263F /* MASConstraint.m in Sources */,
 				3F91BACF1EA73502005F263F /* ViewController+MASAdditions.m in Sources */,
+				3F2844E21EA8606500785F44 /* hu1View.m in Sources */,
 				3F91BADE1EA747C6005F263F /* huView.m in Sources */,
 				3F91BAE91EA74812005F263F /* DemoController.m in Sources */,
 				3F91BAC91EA73502005F263F /* MASLayoutConstraint.m in Sources */,

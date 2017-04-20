@@ -10,6 +10,7 @@
 
 typedef enum {
     kDemoFuncHu,
+    kDemoFuncHu1,
     kDemoFuncZhu
 } kDemoFunc;
 

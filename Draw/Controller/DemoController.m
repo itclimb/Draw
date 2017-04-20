@@ -9,6 +9,7 @@
 #import "DemoController.h"
 #import "Masonry.h"
 #import "huView.h"
+#import "hu1View.h"
 #import "zhuView.h"
 
 @interface DemoController ()
@@ -25,6 +26,9 @@
     switch (self.type) {
         case kDemoFuncHu:
             baseView = [huView sharedhuView];
+            break;
+        case kDemoFuncHu1:
+            baseView = [[hu1View alloc] init];
             break;
         case kDemoFuncZhu:
             baseView = [zhuView sharedzhuView];
