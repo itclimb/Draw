@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JJSingleton.h"
 
 @interface zhuView : UIView
+JJSingletonH(zhuView)
 
 @end

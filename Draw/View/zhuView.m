@@ -9,7 +9,7 @@
 #import "zhuView.h"
 
 @implementation zhuView
-
+JJSingletonM(zhuView)
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

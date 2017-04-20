@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JJSingleton.h"
 
 @interface huView : UIView
+JJSingletonH(huView)
 
 @end

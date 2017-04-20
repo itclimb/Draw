@@ -10,6 +10,7 @@
 #import "Masonry.h"
 
 @implementation huView
+JJSingletonM(huView)
 
 - (void)drawRect:(CGRect)rect{
     

@@ -24,10 +24,10 @@
     UIView *baseView;
     switch (self.type) {
         case kDemoFuncHu:
-            baseView = [[huView alloc] init];
+            baseView = [huView sharedhuView];
             break;
         case kDemoFuncZhu:
-            baseView = [[zhuView alloc] init];
+            baseView = [zhuView sharedzhuView];
             break;
         default:
             break;
