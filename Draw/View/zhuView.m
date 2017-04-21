@@ -19,10 +19,7 @@ JJSingletonM(zhuView)
     }
     return self;
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-*/
+
 - (void)drawRect:(CGRect)rect {
     NSArray *datas = @[@300, @150.65, @55.3, @507.7, @95.8, @700, @650.65];
     NSInteger len = datas.count;
