@@ -26,7 +26,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         //label
-        self.backgroundColor = [UIColor magentaColor];
+        self.backgroundColor = [UIColor yellowColor];
         self.label = [[UILabel alloc] init];
         self.label.textAlignment  = NSTextAlignmentCenter;
         [self addSubview:self.label];

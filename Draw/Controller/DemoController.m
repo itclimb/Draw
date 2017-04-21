@@ -11,6 +11,8 @@
 #import "huView.h"
 #import "hu1View.h"
 #import "zhuView.h"
+#import "LineView.h"
+#import "DrawPictureView.h"
 
 @interface DemoController ()
 
@@ -33,6 +35,12 @@
         case kDemoFuncZhu:
             baseView = [zhuView sharedzhuView];
             break;
+        case kDemoFuncLine:
+            baseView = [[LineView alloc] init];
+            break;
+        case kDemoFuncPicture:
+            baseView = [[DrawPictureView alloc] init];
+            break;
         default:
             break;
     }
@@ -42,7 +50,7 @@
         make.center.mas_equalTo(self.view);
         make.width.height.mas_equalTo(300);
     }];
-    baseView.backgroundColor = [UIColor whiteColor];
+//    baseView.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
