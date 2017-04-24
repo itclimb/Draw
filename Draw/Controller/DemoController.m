@@ -15,6 +15,7 @@
 #import "DrawPictureView.h"
 #import "JJImageView.h"
 #import "UIImage+JJImage.h"
+#import "ScreenShotView.h"
 
 @interface DemoController ()
 
@@ -45,6 +46,8 @@
             break;
         case kDemoFuncImageView:
             baseView = [[UIView alloc] init];
+        case kDemoFuncScreenShot:
+            baseView = [[ScreenShotView alloc] init];
         default:
             break;
     }
@@ -59,9 +62,10 @@
         
         JJImageView *imgView1 = [[JJImageView alloc] init];
         imgView1.frame = CGRectMake(100, 0, 100, 100);
-        UIImage *clipImage = [UIImage imageNamed:@"me"];
+        UIImage *image1 = [UIImage imageNamed:@"me"];
+        [image1 addWaterMark:@"@Rubby"];
         //对图片进行裁剪
-        clipImage = [clipImage clipedImage:clipImage];
+        UIImage *clipImage = [UIImage clipedImage:image1];
         imgView1.image = clipImage;
         [baseView addSubview:imgView1];
     }

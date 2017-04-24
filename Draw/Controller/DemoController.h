@@ -14,7 +14,8 @@ typedef enum {
     kDemoFuncZhu,
     kDemoFuncLine,
     kDemoFuncPicture,
-    kDemoFuncImageView
+    kDemoFuncImageView,
+    kDemoFuncScreenShot
 } kDemoFunc;
 
 @interface DemoController : UIViewController

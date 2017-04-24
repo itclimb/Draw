@@ -31,6 +31,7 @@
 		3F91BAEA1EA74812005F263F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAE81EA74812005F263F /* ViewController.m */; };
 		3FDD214D1EAD92250000EFF6 /* JJImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD214C1EAD92250000EFF6 /* JJImageView.m */; };
 		3FDD21501EADA1AB0000EFF6 /* UIImage+JJImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD214F1EADA1AB0000EFF6 /* UIImage+JJImage.m */; };
+		3FDD21531EADF1A30000EFF6 /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD21521EADF1A30000EFF6 /* ScreenShotView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,8 @@
 		3FDD214C1EAD92250000EFF6 /* JJImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJImageView.m; sourceTree = "<group>"; };
 		3FDD214E1EADA1AB0000EFF6 /* UIImage+JJImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JJImage.h"; sourceTree = "<group>"; };
 		3FDD214F1EADA1AB0000EFF6 /* UIImage+JJImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JJImage.m"; sourceTree = "<group>"; };
+		3FDD21511EADF1A30000EFF6 /* ScreenShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotView.h; sourceTree = "<group>"; };
+		3FDD21521EADF1A30000EFF6 /* ScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,8 @@
 				3F2844F11EA9E88500785F44 /* DrawPictureView.m */,
 				3FDD214B1EAD92250000EFF6 /* JJImageView.h */,
 				3FDD214C1EAD92250000EFF6 /* JJImageView.m */,
+				3FDD21511EADF1A30000EFF6 /* ScreenShotView.h */,
+				3FDD21521EADF1A30000EFF6 /* ScreenShotView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			files = (
 				3F91BAC81EA73502005F263F /* MASConstraintMaker.m in Sources */,
 				3F91BAC71EA73502005F263F /* MASConstraint.m in Sources */,
+				3FDD21531EADF1A30000EFF6 /* ScreenShotView.m in Sources */,
 				3F2844E81EA9B65900785F44 /* LineView.m in Sources */,
 				3F91BACF1EA73502005F263F /* ViewController+MASAdditions.m in Sources */,
 				3F2844E21EA8606500785F44 /* hu1View.m in Sources */,

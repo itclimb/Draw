@@ -7,6 +7,7 @@
 //
 
 #import "JJImageView.h"
+#import "Masonry.h"
 
 @implementation JJImageView
 
@@ -15,6 +16,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
+        
     }
     return self;
 }

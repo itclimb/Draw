@@ -10,17 +10,39 @@
 
 @implementation UIImage (JJImage)
 
-- (UIImage *)clipedImage:(UIImage *)image{
++ (UIImage *)clipedImage:(UIImage *)image{
     //开启图片的图形上下文
-    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0);
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0);
+    //获取上下文
     CGContextRef ref = UIGraphicsGetCurrentContext();
-    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.size.width/2, self.size.height/2) radius:self.size.width/2 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
+    //路径
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(image.size.width/2, image.size.height/2) radius:image.size.width/2 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
     CGContextAddPath(ref, path.CGPath);
+    //裁剪
     CGContextClip(ref);
     [image drawAtPoint:CGPointZero];
+    
+    //添加水印
+    NSString *text = @"Hello";
+    NSDictionary *dict = @{
+                           NSFontAttributeName : [UIFont systemFontOfSize:20],
+                           NSForegroundColorAttributeName : [UIColor redColor]
+                           };
+    [text drawAtPoint:CGPointMake(0, 0) withAttributes:dict];
+    
+    //获取裁剪后的Image
     UIImage *clipImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndPDFContext();
     return clipImage;
 }
+//添加水印
+- (void)addWaterMark:(NSString *)text{
+    NSDictionary *dict = @{
+                           NSFontAttributeName : [UIFont systemFontOfSize:20],
+                           NSForegroundColorAttributeName : [UIColor redColor]
+                           };
+    [text drawAtPoint:CGPointMake(0, 20) withAttributes:dict];
+}
+
 
 @end
