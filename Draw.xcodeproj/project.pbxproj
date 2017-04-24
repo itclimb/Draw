@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3F2844E21EA8606500785F44 /* hu1View.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2844E11EA8606500785F44 /* hu1View.m */; };
 		3F2844E81EA9B65900785F44 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2844E71EA9B65900785F44 /* LineView.m */; };
-		3F2844EF1EA9E40100785F44 /* UIColor+JJColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2844EE1EA9E40100785F44 /* UIColor+JJColor.m */; };
 		3F2844F21EA9E88500785F44 /* DrawPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2844F11EA9E88500785F44 /* DrawPictureView.m */; };
 		3F2893081EA0600100F55556 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2893071EA0600100F55556 /* main.m */; };
 		3F2893131EA0600100F55556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2893121EA0600100F55556 /* Assets.xcassets */; };
@@ -30,6 +29,8 @@
 		3F91BAE31EA747F1005F263F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAE21EA747F1005F263F /* AppDelegate.m */; };
 		3F91BAE91EA74812005F263F /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAE61EA74812005F263F /* DemoController.m */; };
 		3F91BAEA1EA74812005F263F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91BAE81EA74812005F263F /* ViewController.m */; };
+		3FDD214D1EAD92250000EFF6 /* JJImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD214C1EAD92250000EFF6 /* JJImageView.m */; };
+		3FDD21501EADA1AB0000EFF6 /* UIImage+JJImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDD214F1EADA1AB0000EFF6 /* UIImage+JJImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +39,6 @@
 		3F2844E11EA8606500785F44 /* hu1View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hu1View.m; sourceTree = "<group>"; };
 		3F2844E61EA9B65900785F44 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
 		3F2844E71EA9B65900785F44 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
-		3F2844ED1EA9E40100785F44 /* UIColor+JJColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JJColor.h"; sourceTree = "<group>"; };
-		3F2844EE1EA9E40100785F44 /* UIColor+JJColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JJColor.m"; sourceTree = "<group>"; };
 		3F2844F01EA9E88500785F44 /* DrawPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPictureView.h; sourceTree = "<group>"; };
 		3F2844F11EA9E88500785F44 /* DrawPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPictureView.m; sourceTree = "<group>"; };
 		3F2893031EA0600100F55556 /* Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +82,10 @@
 		3F91BAE61EA74812005F263F /* DemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoController.m; sourceTree = "<group>"; };
 		3F91BAE71EA74812005F263F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3F91BAE81EA74812005F263F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FDD214B1EAD92250000EFF6 /* JJImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJImageView.h; sourceTree = "<group>"; };
+		3FDD214C1EAD92250000EFF6 /* JJImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJImageView.m; sourceTree = "<group>"; };
+		3FDD214E1EADA1AB0000EFF6 /* UIImage+JJImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JJImage.h"; sourceTree = "<group>"; };
+		3FDD214F1EADA1AB0000EFF6 /* UIImage+JJImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JJImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +102,6 @@
 		3F2844E91EA9DF8300785F44 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				3F2844ED1EA9E40100785F44 /* UIColor+JJColor.h */,
-				3F2844EE1EA9E40100785F44 /* UIColor+JJColor.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -138,6 +139,8 @@
 			children = (
 				3F2844E91EA9DF8300785F44 /* Extension */,
 				3F2844DF1EA8488700785F44 /* JJSingleton.h */,
+				3FDD214E1EADA1AB0000EFF6 /* UIImage+JJImage.h */,
+				3FDD214F1EADA1AB0000EFF6 /* UIImage+JJImage.m */,
 				3F2893121EA0600100F55556 /* Assets.xcassets */,
 				3F2893141EA0600100F55556 /* LaunchScreen.storyboard */,
 				3F2893171EA0600100F55556 /* Info.plist */,
@@ -192,6 +195,8 @@
 				3F2844E71EA9B65900785F44 /* LineView.m */,
 				3F2844F01EA9E88500785F44 /* DrawPictureView.h */,
 				3F2844F11EA9E88500785F44 /* DrawPictureView.m */,
+				3FDD214B1EAD92250000EFF6 /* JJImageView.h */,
+				3FDD214C1EAD92250000EFF6 /* JJImageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +301,8 @@
 				3F91BADE1EA747C6005F263F /* huView.m in Sources */,
 				3F91BAE91EA74812005F263F /* DemoController.m in Sources */,
 				3F91BAC91EA73502005F263F /* MASLayoutConstraint.m in Sources */,
+				3FDD214D1EAD92250000EFF6 /* JJImageView.m in Sources */,
+				3FDD21501EADA1AB0000EFF6 /* UIImage+JJImage.m in Sources */,
 				3F91BAEA1EA74812005F263F /* ViewController.m in Sources */,
 				3F2844F21EA9E88500785F44 /* DrawPictureView.m in Sources */,
 				3F91BACC1EA73502005F263F /* NSArray+MASAdditions.m in Sources */,
@@ -304,7 +311,6 @@
 				3F91BACE1EA73502005F263F /* View+MASAdditions.m in Sources */,
 				3F2893081EA0600100F55556 /* main.m in Sources */,
 				3F91BAC61EA73502005F263F /* MASCompositeConstraint.m in Sources */,
-				3F2844EF1EA9E40100785F44 /* UIColor+JJColor.m in Sources */,
 				3F91BAE31EA747F1005F263F /* AppDelegate.m in Sources */,
 				3F91BADF1EA747C6005F263F /* zhuView.m in Sources */,
 				3F91BACD1EA73502005F263F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
