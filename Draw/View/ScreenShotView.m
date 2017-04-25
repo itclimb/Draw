@@ -32,12 +32,13 @@
 //截图
 - (void)screenShot:(UIButton *)button{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        //开启图片图形上下文
+        //开启绘图上下文
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0.0);
-        //将layer呈现在指定的上下文
+        //将layer呈现在上下文
         [self.layer renderInContext:UIGraphicsGetCurrentContext()];
         //获取截图
         UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+        //关闭绘图上下文
         UIGraphicsEndPDFContext();
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     });

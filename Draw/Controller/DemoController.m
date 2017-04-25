@@ -16,8 +16,11 @@
 #import "JJImageView.h"
 #import "UIImage+JJImage.h"
 #import "ScreenShotView.h"
+#import "unlockView.h"
 
 @interface DemoController ()
+
+@property(nonatomic, strong) unlockView *unlockView;
 
 @end
 
@@ -46,8 +49,14 @@
             break;
         case kDemoFuncImageView:
             baseView = [[UIView alloc] init];
+            break;
         case kDemoFuncScreenShot:
             baseView = [[ScreenShotView alloc] init];
+            break;
+        case kDemoFuncUnlock:
+            self.unlockView = [[unlockView alloc] init];
+            baseView = self.unlockView;
+            break;
         default:
             break;
     }
@@ -68,6 +77,17 @@
         UIImage *clipImage = [UIImage clipedImage:image1];
         imgView1.image = clipImage;
         [baseView addSubview:imgView1];
+    }
+    if (self.type == kDemoFuncUnlock) {
+        //用指定小图片铺满当前的屏幕
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg"]];
+        self.unlockView.unlockBlock = ^(unlockView *unlockView, NSString *password){
+            if ([password isEqualToString:@"4578"]) {
+                return YES;
+            }else{
+                return NO;
+            }
+        };
     }
     [self.view addSubview:baseView];
     [baseView mas_makeConstraints:^(MASConstraintMaker *make) {
