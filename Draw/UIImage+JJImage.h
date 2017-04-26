@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (JJImage)
-//添加水印
-- (void)addWaterMark:(NSString *)text;
+
 //裁剪图片
-+ (UIImage *)clipedImage:(UIImage *)image;
++ (UIImage *)clipedImage:(UIImage *)image andText:(NSString *)text;
 
 @end

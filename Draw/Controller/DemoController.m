@@ -76,9 +76,8 @@
         JJImageView *imgView1 = [[JJImageView alloc] init];
         imgView1.frame = CGRectMake(100, 0, 100, 100);
         UIImage *image1 = [UIImage imageNamed:@"me"];
-        [image1 addWaterMark:@"@Rubby"];
         //对图片进行裁剪
-        UIImage *clipImage = [UIImage clipedImage:image1];
+        UIImage *clipImage = [UIImage clipedImage:image1 andText:@"Hello"];
         imgView1.image = clipImage;
         [baseView addSubview:imgView1];
     }
