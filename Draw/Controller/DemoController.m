@@ -17,6 +17,7 @@
 #import "UIImage+JJImage.h"
 #import "ScreenShotView.h"
 #import "unlockView.h"
+#import "ClockView.h"
 
 @interface DemoController ()
 
@@ -57,11 +58,14 @@
             self.unlockView = [[unlockView alloc] init];
             baseView = self.unlockView;
             break;
+        case kDemoFuncClock:
+            baseView = [[ClockView alloc] init];
+            break;
         default:
             break;
     }
     
-    if (self.type == kDemoFuncImageView) {
+    if (self.type == kDemoFuncImageView) { //自定义图片框
         JJImageView *imgView = [[JJImageView alloc] init];
         //对图片框进行裁剪
         imgView.clipCorner = YES;
@@ -78,7 +82,7 @@
         imgView1.image = clipImage;
         [baseView addSubview:imgView1];
     }
-    if (self.type == kDemoFuncUnlock) {
+    if (self.type == kDemoFuncUnlock) {  //解锁
         //用指定小图片铺满当前的屏幕
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg"]];
         self.unlockView.unlockBlock = ^(unlockView *unlockView, NSString *password){
