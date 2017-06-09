@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F05FE5A1EB033CF008E51C7 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F05FE591EB033CF008E51C7 /* ClockView.m */; };
+		3F2002071EB1850700E6C959 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2002061EB1850700E6C959 /* TestView.m */; };
 		3F2844E21EA8606500785F44 /* hu1View.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2844E11EA8606500785F44 /* hu1View.m */; };
 		3F2844E81EA9B65900785F44 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2844E71EA9B65900785F44 /* LineView.m */; };
 		3F2844F21EA9E88500785F44 /* DrawPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2844F11EA9E88500785F44 /* DrawPictureView.m */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		3F05FE581EB033CF008E51C7 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
 		3F05FE591EB033CF008E51C7 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
+		3F2002051EB1850700E6C959 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		3F2002061EB1850700E6C959 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		3F2844DF1EA8488700785F44 /* JJSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJSingleton.h; sourceTree = "<group>"; };
 		3F2844E01EA8606500785F44 /* hu1View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hu1View.h; sourceTree = "<group>"; };
 		3F2844E11EA8606500785F44 /* hu1View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hu1View.m; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 		3F91BAD91EA747C6005F263F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F2002051EB1850700E6C959 /* TestView.h */,
+				3F2002061EB1850700E6C959 /* TestView.m */,
 				3F91BADA1EA747C6005F263F /* huView.h */,
 				3F91BADB1EA747C6005F263F /* huView.m */,
 				3F2844E01EA8606500785F44 /* hu1View.h */,
@@ -267,7 +272,7 @@
 				TargetAttributes = {
 					3F2893021EA0600100F55556 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 27RJ7UZ4RL;
+						DevelopmentTeam = H874NRF4RE;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -330,6 +335,7 @@
 				3F91BAC61EA73502005F263F /* MASCompositeConstraint.m in Sources */,
 				3F91BAE31EA747F1005F263F /* AppDelegate.m in Sources */,
 				3F05FE5A1EB033CF008E51C7 /* ClockView.m in Sources */,
+				3F2002071EB1850700E6C959 /* TestView.m in Sources */,
 				3F91BADF1EA747C6005F263F /* zhuView.m in Sources */,
 				3F91BACD1EA73502005F263F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
@@ -443,7 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 27RJ7UZ4RL;
+				DEVELOPMENT_TEAM = H874NRF4RE;
 				INFOPLIST_FILE = Draw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = itclimb.yuancheng.com.Draw;
@@ -455,7 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 27RJ7UZ4RL;
+				DEVELOPMENT_TEAM = H874NRF4RE;
 				INFOPLIST_FILE = Draw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = itclimb.yuancheng.com.Draw;

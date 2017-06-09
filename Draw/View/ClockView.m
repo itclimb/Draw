@@ -53,7 +53,7 @@
 #pragma mark - 进行旋转
 - (void)stateRotate{
     
-    //1.秒针旋转角度
+    //1.秒针旋转角度,每秒钟应该旋转的角度为M_PI * 2 / 60
     CGFloat angleSec = M_PI * 2 / 60 / 60;
     //2.分针旋转角度
     CGFloat angleMiu = angleSec / 60;
@@ -127,7 +127,6 @@
     //4.获取当前的小时
     NSInteger hourNum = [calendar component:NSCalendarUnitHour fromDate:[NSDate date]];
     CGFloat currentHorAngle = (M_PI * 2 / 12) * hourNum + currentMiuAngle / 12;
-    
     self.hourLayer.transform = CATransform3DRotate(self.hourLayer.transform, currentHorAngle, 0, 0, 1);
 }
 

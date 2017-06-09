@@ -8,6 +8,7 @@
 
 #import "DemoController.h"
 #import "Masonry.h"
+#import "TestView.h"
 #import "huView.h"
 #import "hu1View.h"
 #import "zhuView.h"
@@ -33,6 +34,9 @@
     
     UIView *baseView;
     switch (self.type) {
+        case kDemoFuncTest:
+            baseView = [[TestView alloc] init];
+            break;
         case kDemoFuncHu:
             baseView = [huView sharedhuView];
             break;
